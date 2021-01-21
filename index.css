@@ -1,6 +1,3 @@
-
-
-
 body, html
 {
 	-webkit-touch-callout: none;
@@ -18,7 +15,8 @@ body, html
 #bt,#pmt{font-size:40px;}
 #l0{background-color:#EEB;}
 #l1{background-color:#FAA;}
-#w{background-color:#AFA;}
+#w1{background-color:#AFA;}
+#w0{background-color:#FFF;}
 #bt{background-color:#A44;}
 div{font-weight:bold;}
 table{display:inline-block;}
@@ -86,7 +84,7 @@ table{display:inline-block;}
 	border-radius:5vmin;
 }
 
-#w, .l
+.l
 {
 	z-index:0;
 	width:60vw;
@@ -95,38 +93,17 @@ table{display:inline-block;}
 	margin-left:20vw;
 }
 
-#l0:hover
-{
-	background-color:#DD0;
-	color:#DDD;
-}
+.l:hover{color:#DDD;}
+.l:active{color:#FFF;}
 
-#l0:active
-{
-	background-color:#BB0;
-	color:#FFF;
-}
+#l0:hover{background-color:#DD0;}
+#l0:active{background-color:#BB0;}
 
-#l1:hover
-{
-	background-color:#D66;
-	color:#DDD;
-}
+#l1:hover{background-color:#D66;}
+#l1:active{background-color:#A44;}
 
-#l1:active
-{
-	background-color:#A44;
-	color:#FFF;
-}
+#w1:hover{background-color:#6D6;}
+#w1:active{background-color:#4A4;}
 
-#w:hover
-{
-	background-color:#6D6;
-	color:#DDD;
-}
-
-#w:active
-{
-	background-color:#4A4;
-	color:#FFF;
-}
+#w0:hover{background-color:#888;}
+#w0:active{background-color:#000;}
