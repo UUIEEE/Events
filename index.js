@@ -1,11 +1,11 @@
 dc=document;
-bdy=()=>{gb();bg()}
+bdy=a=>{gb();bg()}
 gto=a=>{a?window.open(a,'_blank'):gb()}
 gb=(a="pmt")=>{
 	let r=dc.getElementById(a).style.display;
 	gebi(a).style.display=r=="none"?"block":"none";
 }
-gebi=(a)=>{return dc.getElementById(a)}
+gebi=a=>{return dc.getElementById(a)}
 tmf=(i,t)=>{
 		return setInterval(()=>{
 		var now = new Date().getTime();
@@ -22,4 +22,4 @@ tmf=(i,t)=>{
 			gebi("l"+i[2]).title="Click to join Webinar";
 		}
 	}, 1000);}
-bg=()=>{const c = tmf("dT0",new Date("Jan 25, 2021 10:29:00").getTime()), d = tmf("dT1",new Date("Jan 25, 2021 16:29:00").getTime());}
+bg=a=>{const c = tmf("dT0",new Date("Jan 25, 2021 10:29:00").getTime()), d = tmf("dT1",new Date("Jan 25, 2021 16:29:00").getTime());}
