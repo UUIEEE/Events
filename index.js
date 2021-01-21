@@ -2,7 +2,7 @@
 
 dc=document;
 bdy=()=>{gb();bg()}
-gto=a=>{window.open(a,'_blank')}
+gto=a=>{a?window.open(a,'_blank'):gb()}
 gb=(a="pmt")=>{
 	let r=dc.getElementById(a).style.display;
 	gebi(a).style.display=r=="none"?"block":"none";
