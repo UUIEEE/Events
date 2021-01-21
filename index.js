@@ -1,5 +1,3 @@
-
-
 dc=document;
 bdy=()=>{gb();bg()}
 gto=a=>{a?window.open(a,'_blank'):gb()}
@@ -24,9 +22,4 @@ tmf=(i,t)=>{
 			gebi("l"+i[2]).title="Click to join Webinar";
 		}
 	}, 1000);}
-bg=()=>{
-	var c = tmf("dT0",new Date("Jan 25, 2021 10:29:00").getTime());
-	console.log("sssss")
-	var d = tmf("dT1",new Date("Jan 25, 2021 16:29:00").getTime());
-	
-}
+bg=()=>{const c = tmf("dT0",new Date("Jan 25, 2021 10:29:00").getTime()), d = tmf("dT1",new Date("Jan 25, 2021 16:29:00").getTime());}
