@@ -2,9 +2,10 @@ dc=document;
 bdy=()=>{gb();bg()}
 var id=[0,0]
 gto=a=>{a?window.open(a,'_blank'):gb()}
-gb=(a="pmt")=>{
+gb=(b,a="pmt")=>{
+	event.stopPropagation();
 	let r=dc.getElementById(a).style.display;
-	gebi(a).style.display=r=="none"?"block":"none";
+	gebi(a).style.display=b?"none":(r=="none"?"block":"none");
 }
 gebi=(a)=>{return dc.getElementById(a)}
 tmf=(i,t, dt=3600000)=>{
