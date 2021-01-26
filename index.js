@@ -1,7 +1,6 @@
-
-
 dc=document;
 bdy=()=>{gb();bg()}
+var id=[0,0]
 gto=a=>{a?window.open(a,'_blank'):gb()}
 gb=(a="pmt")=>{
 	let r=dc.getElementById(a).style.display;
@@ -20,8 +19,8 @@ tmf=(i,t, dt=3600000)=>{
 		if(d<0)
 		{
 			gebi(i).innerHTML = '('+(-d<dt?"Started":"Ended")+')';
-			clearInterval(x);
+			clearInterval(id[i[2]]);
 			gebi("l"+i[2]).title="Click to join Webinar";
 		}
 	}, 1000);}
-bg=()=>{const c = tmf("dT0",new Date("Jan 30, 2021 10:29:00").getTime(),20*60000), d = tmf("dT1",new Date("Jan 30, 2021 16:29:00").getTime(),20*60000);}
+bg=()=>{id[0] = tmf("dT0",new Date("Jan 30, 2021 10:29:00").getTime(),20*60000), id[1] = tmf("dT1",new Date("Jan 30, 2021 16:29:00").getTime(),20*60000);}
