@@ -8,8 +8,28 @@ gto = (a) => {
 };
 gb = (b, a = "pmt") => {
     event.stopPropagation();
+    des(0);
     let r = dc.getElementById(a).style.display;
     gebi(a).style.display = b ? "none" : r == "none" ? "block" : "none";
+};
+
+des = (n) => {
+    event.stopPropagation();
+    let a = [
+        "  ",
+        [
+            "Chhal Prapanch",
+            "Participants would be required to find the answer based on the clues/hints/puzzles shown through an online meeting in the given time limit.",
+        ],
+        [
+            "Chitragaatha",
+            "Participants would be required to write a short story  based on/inspired by the picture(s) provided at the time of the competition within the given time limit",
+        ],
+    ];
+    gebi("desTtl").innerHTML = a[n][0];
+    gebi("desC").innerHTML = a[n][1];
+    gebi("desD").style.display = n ? "block" : "none";
+    gebi("desB").style.display = n ? "block" : "none";
 };
 gebi = (a) => {
     return dc.getElementById(a);

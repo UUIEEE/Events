@@ -24,11 +24,11 @@
         <meta name="description" content="Quiz Event" />
         <link rel="stylesheet" href="index.css" />
         <script src="index.js"></script>
-        <title>QuizEd : UU IEEE Quiz</title>
+        <title>IEEE SIGHT day celebration : IEEE-UU</title>
     </head>
-    <body id="bdy" onload="bdy()" onclick="gb(1)">
-        <img id="lg" src="https://raw.githubusercontent.com/UUIEEE/Events/main/Media/Img/EventLogos/QuizEd/1/QuizEd.png" />
-
+    <body id="bdy" onload="bdy()" onclick="des(0)">
+        <div id="ttlFnt">IEEE SIGHT day celebration</div>
+        <br />
         <div class="cen">
             <h3 id="org">Organized by:</h3>
             <img
@@ -41,7 +41,7 @@
             <div
                 id="w0"
                 class="l"
-                onclick="gto('https://docs.google.com/forms/d/e/1FAIpQLSeXpY31mQAuH4f1BmMH6Gc2dvt-nucNYF7WB5Iwoj7rToJIMA/viewform?usp=sf_link')"
+                onclick="gto('https://docs.google.com/forms/d/e/1FAIpQLSeXpY31mQAuH4f1BmMH6Gc2dvt-nucNYF7WB5Iwoj7rToJIMA/viewform')"
                 title="Register now"
             >
                 Registration Form
@@ -56,18 +56,17 @@
                 WhatsApp Group
             </div>
             <br />
-            <div
-                id="kh"
-                class="l"
-                onclick="gto('https://kahoot.com/home/mobile-app/')"
-                title="Install Kahoot platform"
-            >
-                Visit Kahoot
+            <div id="des" title="Event descriptions">
+                <div id="pnch" class="l l2" onclick="des(1)">
+                    Chhal Prapanch
+                </div>
+                <br id="sep" />
+                <div id="chtr" class="l l2" onclick="des(2)">Chitragaatha</div>
             </div>
         </h1>
         <br /><br /><br />
         <h2>
-            <span> March 25, 2021<br />Timing : 10:30AM to 11:00AM </span>
+            <span> April 28, 2021<br />Timing : 5:30PM onwards </span>
         </h2>
 
         <div id="pmt">
@@ -81,6 +80,12 @@
             so you do not miss any updates <br /><br /><br />
             <button onclick="gb()" id="bt">Close</button>
             <br />
+        </div>
+        <div id="desB" onclick="des(0)"></div>
+        <div id="desD" onclick="des(0)">
+            <div id="desTtl">Title</div>
+            <br />
+            <div id="desC">content</div>
         </div>
     </body>
 </html>

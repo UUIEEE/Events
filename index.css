@@ -13,6 +13,52 @@ html {
     color: rgba(255, 163, 26, 0.8);
 }
 
+@font-face {
+    font-family: FingerPaint;
+    src: url("https://uuieee.github.io/Media/Fonts/FingerPaint/FingerPaint-Regular.ttf");
+}
+
+#desD {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    background-color: rgb(27, 27, 27);
+    border: solid #eee 1px;
+    padding: 5vmin 1vmin 5vmin 1vmin;
+}
+
+#desB {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0.75;
+    background-color: rgb(27, 27, 27);
+}
+
+#desTtl {
+    text-decoration: underline;
+    font-family: FingerPaint;
+    font-size: 8.5vmin;
+}
+
+#desC {
+    font-size: 6vmin;
+}
+
+#ttlFnt {
+    font-size: 10vmin;
+}
+
+#ttlFnt:hover {
+    text-shadow: 0px 0px #eee;
+}
+
 #org {
     margin: 0;
 }
@@ -106,4 +152,13 @@ table {
 .l:active {
     cursor: grabbing;
     color: #fff;
+}
+@media only screen and (min-device-width: 720px) {
+    .l2 {
+        width: 28vw;
+        display: inline-block;
+    }
+    #sep {
+        display: none;
+    }
 }
